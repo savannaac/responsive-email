@@ -1,4 +1,4 @@
-# html-css-mockup
+# html-css email mockup
 Email mock-up using HTML and CSS.
 
 ## Installation
