@@ -25,14 +25,17 @@
 
         h1 {
             color: #34495E;
+            display: block;
             font-size: 1rem;
             font-weight: 100;
+            line-height: 1.4rem;
         }
 
         h2 {
             color: #424949;
             font-size: .8rem;
             font-weight: 100; 
+            margin-top: 1.7rem;
         }
         
         h3 {
@@ -40,6 +43,44 @@
             font-size: .7rem;
             font-weight: 100; 
         }
+
+        a:visited, a:link, a:active {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .subscript {
+            font-size: .7rem;
+        }
+
+        .body {
+            margin: auto;
+            width: 72%;
+        }
+
+        /* images */
+        .img-header {
+            padding: 1rem;
+            width: 85%;
+        }
+
+        .img-body {
+            padding: 1rem;
+            width: 75%;
+        }
+
+        .img-footer {
+            padding: 1.5rem;
+            height: 30%;
+            width: 25%;
+
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
     </style>
 
 
@@ -51,65 +92,72 @@
     <table role="presentation" border="1px solid" cellspacing="0" width="100%">
         <tr>
             <td>
-                <img src="public/images/til_03.png">
+                <center><img src="public/images/til_03.png" class="img-header"></center>
             </td>
         </tr>
     </table>
         
     <!-- Body 1 --> 
-    <table role="presentation" border="1px solid" cellspacing="0" width="100%">
-        <tr>
-            <td>
-                <h1>Tumor infiltrating lymphocytes (TIL) are part of the body's natural response to cancer. For patients who have not responded to or who have progressed on immune checkpoint inhibitors, TIL are being investigated as a potential treatment option in multiple solid tumors.<sup>1-3</sup></h1>
+    <div class="body">
+        <table role="presentation" border="1px solid" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <h1>Tumor infiltrating lymphocytes (TIL) are part of the body's natural response to cancer. 
+                        For patients who have not responded to or who have progressed on immune checkpoint 
+                        inhibitors, TIL are being investigated as a potential treatment option in multiple 
+                        solid tumors.<sup class="subscript">1-3</sup></h1>
+                    
+                    <center><img src="public/images/learn_more_07.jpg" class="img-body"></center>
+                    
+                    <h1>
+                        IOVANCE Biotherapeutics is committed to deepening the
+                        understanding of TIL and optimizing TIL technology to help
+                        shape the next chapter of TIL cell therapy.
+                    </h1>
                 
-                <img src="public/images/learn_more_07.jpg">
-                
-                <h1>
-                    IOVANCE Biotherapeutics is committed to deepening the
-                    understanding of TIL and optimizing TIL technology to help
-                    shape the next chapter of TIL cell therapy.
-                </h1>
-            
-                <img src="public/images/visit_link_10.jpg">
-            </td> 
-        </tr>
-    </table>
+                    <center><img src="public/images/visit_link_10.jpg" class="img-body"></center>
+                </td> 
+            </tr>
+        </table>
 
-    <!-- Body 2 -->
-    <table role="presentation" border="1px solid" cellspacing="0" width="100%">
-        <tr>
-            <td>
-                <h3>
-                    <b>References: 1.</b> Rosenberg SA, Spiess P, Lafreniere R. A new approach to the adoptive
-                    immunotherapy of cancer with tumor-infiltrating lymphocytes. <i>Science.</i>
-                    1986;233:1318-1321. <b>2.</b> Darvin P, Toor SM, Nair VS, Elkord E. Immune checkpoint
-                    inhibitors: recent progress and potential biomarkers. <i>Exp Mol Med.</i> 2018;50(12):165.
-                    <b>3.</b> Nowicki TS, Hu-Lieskovan S, Ribas A. Mechanisms of resistance to PD-1 and PD-L1
-                    blockade. <i>Cancer J.</i> 2018;24(1):47-53.
-                </h3>
-            </td> 
-        </tr>
-    </table>
+        <!-- Body 2 -->
+        <table role="presentation" border="1px solid" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <h3>
+                        <b>References: 1.</b> Rosenberg SA, Spiess P, Lafreniere R. A new approach to the adoptive
+                        immunotherapy of cancer with tumor-infiltrating lymphocytes. <i>Science.</i>
+                        1986;233:1318-1321. <b>2.</b> Darvin P, Toor SM, Nair VS, Elkord E. Immune checkpoint
+                        inhibitors: recent progress and potential biomarkers. <i>Exp Mol Med.</i> 2018;50(12):165.
+                        <b>3.</b> Nowicki TS, Hu-Lieskovan S, Ribas A. Mechanisms of resistance to PD-1 and PD-L1
+                        blockade. <i>Cancer J.</i> 2018;24(1):47-53.
+                    </h3>
+                </td> 
+            </tr>
+        </table>
+    </div>
         
     <!-- Footer -->
     <table role="presentation" border="1px solid" cellspacing="0" width="100%">
         <tr>
             <td> 
-                <img src="public/images/iovance_logo_13.png">
-            
-                <h2>
-                    CONTACT US | PRIVACY POLICY | UNSUBSCRIBE<br><br>
-            
-                    Iovance Biotherapeutics<br>
-                    999 Skyway Rd<br>
-                    Suite 150<br>
-                    SanCarlos, CA 94070<br><br>
-            
-                    © 2020 IOVANCE Biotherapeutics, Inc. All Rights Reserved.<br>
-                    IOVANCE logo is a trademark owned by Iovance<br>
-                    Biotherapeutics, Inc.<br>
-                    PRC-US-00032(v1.0)<br>
-                </h2>
+                <div class="flex-row">
+                    <img src="public/images/iovance_logo_13.png" class="img-footer">
+                
+                    <h2>
+                        <a href="">CONTACT US</a> | <a href="">PRIVACY POLICY</a> | <a href="">UNSUBSCRIBE</a><br><br>
+                
+                        Iovance Biotherapeutics<br>
+                        999 Skyway Rd<br>
+                        Suite 150<br>
+                        SanCarlos, CA 94070<br><br>
+                
+                        © 2020 IOVANCE Biotherapeutics, Inc. All Rights Reserved.<br>
+                        IOVANCE logo is a trademark owned by Iovance<br>
+                        Biotherapeutics, Inc.<br>
+                        PRC-US-00032(v1.0)<br>
+                    </h2>
+                </div>
             </td>
         </tr>
     </table> 
